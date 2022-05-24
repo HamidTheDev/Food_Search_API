@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+h3{
+    font-family: Poppins;
+    letter-spacing: 3px;
+    
+}
+h5{
+    font-family: Poppins;
+    letter-spacing: 3px;
+    font-size: 14px;
+    
+}
+
+
+body{
+    background: rgba(255, 255, 255, 0.412)
+}
+
+.rounded{
+    width: 240px;
+}
+
+.logo{
+    background-color: rgb(9, 147, 165);
+}
+
+button{
+    background-color: rgb(9, 147, 165);
+}
+
+a{
+    color: rgb(25, 25, 25);
+    font-weight: 500;
+    font-family: Poppins;
+    text-decoration: none;
+}
