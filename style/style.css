@@ -36,3 +36,7 @@ a{
     font-family: Poppins;
     text-decoration: none;
 }
+
+#input{
+width: 70vw;
+}
