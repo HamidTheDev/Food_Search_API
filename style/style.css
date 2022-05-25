@@ -37,7 +37,13 @@ a{
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 .input-group{
     width: 80vw;
 }
+=======
+#input{
+width: 70vw;
+}
+>>>>>>> aaa94173e23a6a81eef85566db519ced590cd6c6
