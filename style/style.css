@@ -31,13 +31,22 @@ button{
 }
 
 a{
-    color: rgb(25, 25, 25);
+    color: white;
     font-weight: 500;
     font-family: Poppins;
     text-decoration: none;
+    
 }
 
 
 .input-group{
     width: 80vw;
+}
+
+
+.footer {
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
