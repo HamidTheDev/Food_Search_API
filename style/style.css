@@ -36,3 +36,8 @@ a{
     font-family: Poppins;
     text-decoration: none;
 }
+
+
+.input-group{
+    width: 80vw;
+}
