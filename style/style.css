@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+h3{
+    font-family: Poppins;
+    letter-spacing: 3px;
+    
+}
+h6{
+    font-family: Poppins;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+
+
+.rounded{
+    width: 240px;
+}
+
+.logo{
+    background-color:rgb(9, 147, 165) ;
+    
+}
+
+button{
+    background-color: rgb(9, 147, 165);
+}
+
+a{
+    color: white;
+    font-weight: 500;
+    font-family: Poppins;
+    text-decoration: none;
+    
+}
+
+
+.input-group{
+    width: 80vw;
+}
+
+
+.footer {
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#spinner{
+    display: none;
+    margin-left: 47vw;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin-top: 30vh;
+}
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .input-group {
+            width: 100%;
+        }
+}

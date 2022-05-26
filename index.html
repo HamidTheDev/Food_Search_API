@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <style>
+        body {
+            background: url(images/bg.png) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- search box -->
+    <div class=" logo w-100">
+        
+        <img class="rounded  ps-2 w-10 pb-2" src="images/logo.png" alt="">
+        
+
+    </div>
+
+    <h3 class="text-center pt-3 text-danger">Search Your Recipe</h3>
+
+    <form class="col-md-6 m-auto py-2">
+    <div class="input-group mb-3 mx-auto">
+  <input id="input" type="text" class="form-control" placeholder="Search by food name" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-danger" type="button" onclick="search()">Search...</button>
+</div>
+</form>
+
+<h6 id="searchfor" class="text-center"></h6>
+<!-- spinner  -->
+<div class="text-center">
+<div class="spinner-border text-danger" id="spinner" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+<!-- card -->
+
+<div class="row row-cols-1 row-cols-md-3 g-3 m-4" id="card_area">
+<!-- card container -->
+</div>
+<div class="footer">
+     
+    <p class="text-center pt-3" id="noresult"><a class="pt-3 pe-3" href="mailto:hamidchowdhury.dev@gmail.com">by: hamidchowdhury.dev@gmail.com</a></p>
+</div>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
