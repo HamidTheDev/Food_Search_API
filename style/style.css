@@ -8,7 +8,7 @@ h3{
 h6{
     font-family: Poppins;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     
 }
@@ -57,6 +57,11 @@ a{
     width: 50px;
     font-size: 30px;
     margin-top: 30vh;
+}
+
+
+#noresult{
+    display: none;
 }
 
 

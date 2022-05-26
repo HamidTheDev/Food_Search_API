@@ -22,13 +22,16 @@ function search()
 
 function display(data)
 {
-  // showing card
-  const cardArea = document.getElementById("card_area");
 
-  data.forEach((meal) => {
-    const card = document.createElement("div");
+  if (data != null)
+  {
+    // showing card
+    const cardArea = document.getElementById("card_area");
 
-    card.innerHTML = ` 
+    data.forEach((meal) => {
+      const card = document.createElement("div");
+
+      card.innerHTML = ` 
   <div class="col">
     <div class="card border-danger border-2">
       <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
@@ -40,8 +43,16 @@ function display(data)
   </div> 
     
      `;
-    cardArea.appendChild(card);
-  });
+      cardArea.appendChild(card);
+    });
+  }
+  
+  if(data == null) {
+    document.getElementById('searchfor').style.display = 'none'
+    document.getElementById('noresult').style.display='block'
+  }
+    
+  
   // spiner
   document.getElementById("spinner").style.display = "none";
 }
