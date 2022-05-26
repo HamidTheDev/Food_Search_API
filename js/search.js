@@ -2,6 +2,8 @@ function search()
 {
   // spiner
   document.getElementById("spinner").style.display = "block";
+  document.getElementById("noresult").style.display = "none";
+  document.getElementById("searchfor").style.display = "block";
 
   let input = document.getElementById("input").value;
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`;
