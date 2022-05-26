@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="style/style.css">
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <style>
+        body {
+            background: url(images/bg.png) no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -21,23 +31,25 @@
 
     </div>
 
-    <h3 class="text-center pt-3 text-primary">Search Your Recipe</h3>
+    <h3 class="text-center pt-3 text-danger">Search Your Recipe</h3>
+
+    <form class="col-md-6 m-auto py-2">
     <div class="input-group mb-3 mx-auto">
   <input id="input" type="text" class="form-control" placeholder="Search by food name" aria-label="Recipient's username" aria-describedby="button-addon2">
-  <button class="btn btn-primary" type="button" onclick="search()">Search...</button>
+  <button class="btn btn-danger" type="button" onclick="search()">Search...</button>
 </div>
-
+</form>
 
 <h6 id="searchfor" class="text-center"></h6>
-
+<!-- spinner  -->
 <div class="text-center">
-<div class="spinner-border text-success" id="spinner" role="status">
+<div class="spinner-border text-danger" id="spinner" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
 </div>
 <!-- card -->
 
-<div class="row row-cols-1 row-cols-md-3 g-4 m-4" id="card_area">
+<div class="row row-cols-1 row-cols-md-3 g-3 m-4" id="card_area">
 <!-- card container -->
 </div>
 <div class="footer">

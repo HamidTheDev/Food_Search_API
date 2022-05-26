@@ -30,7 +30,7 @@ function display(data)
 
     card.innerHTML = ` 
   <div class="col">
-    <div class="card">
+    <div class="card border-danger border-2">
       <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${meal.strMeal}</h5>

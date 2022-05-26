@@ -14,16 +14,14 @@ h6{
 }
 
 
-body{
-    background: rgba(255, 255, 255, 0.412)
-}
 
 .rounded{
     width: 240px;
 }
 
 .logo{
-    background-color: rgb(9, 147, 165);
+    background-color:rgb(9, 147, 165) ;
+    
 }
 
 button{
@@ -59,4 +57,12 @@ a{
     width: 50px;
     font-size: 30px;
     margin-top: 30vh;
+}
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .input-group {
+            width: 100%;
+        }
 }
