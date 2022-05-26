@@ -1,31 +1,34 @@
 function search()
 {
-    let input = document.getElementById('input').value
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`  
+  // spiner
+  document.getElementById("spinner").style.display = "block";
 
-    // search result for
-    const searchfor = document.getElementById('searchfor')
-    searchfor.innerText = ` Search Results for: '${input}'`
-    
-    // cleaner 
-    document.getElementById('card_area').innerHTML = '';
+  let input = document.getElementById("input").value;
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`;
 
-    document.getElementById('input').value = ''
+  // search result for
+  const searchfor = document.getElementById("searchfor");
+  searchfor.innerText = ` Search Results for: '${input}'`;
 
-    fetch(url)
-      .then(res => res.json())
-      .then(data => display(data.meals));
+  // cleaner
+  document.getElementById("card_area").innerHTML = "";
+
+  document.getElementById("input").value = "";
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => display(data.meals));
 }
 
 function display(data)
 {
-    const cardArea = document.getElementById('card_area')
-    
-    data.forEach(meal => {
+  // showing card
+  const cardArea = document.getElementById("card_area");
 
-        const card = document.createElement("div");
+  data.forEach((meal) => {
+    const card = document.createElement("div");
 
-        card.innerHTML = ` 
+    card.innerHTML = ` 
   <div class="col">
     <div class="card">
       <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
@@ -37,7 +40,8 @@ function display(data)
   </div> 
     
      `;
-        cardArea.appendChild(card)
-    });
-
+    cardArea.appendChild(card);
+  });
+  // spiner
+  document.getElementById("spinner").style.display = "none";
 }

@@ -25,12 +25,17 @@
     <div class="input-group mb-3 mx-auto">
   <input id="input" type="text" class="form-control" placeholder="Search by food name" aria-label="Recipient's username" aria-describedby="button-addon2">
   <button class="btn btn-primary" type="button" onclick="search()">Search...</button>
-  
 </div>
-<h6 id="searchfor" class="text-center"></h6>
-<h2 class="text-center" id="noresult"></h2>
-<!-- card -->
 
+
+<h6 id="searchfor" class="text-center"></h6>
+
+<div class="text-center">
+<div class="spinner-border text-success" id="spinner" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+<!-- card -->
 
 <div class="row row-cols-1 row-cols-md-3 g-4 m-4" id="card_area">
 <!-- card container -->

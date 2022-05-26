@@ -50,3 +50,13 @@ a{
     bottom: 0;
     width: 100%;
 }
+
+#spinner{
+    display: none;
+    margin-left: 47vw;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    margin-top: 30vh;
+}
