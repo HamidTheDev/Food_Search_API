@@ -1,30 +1,42 @@
 function search()
 {
-  // spiner
-  document.getElementById("spinner").style.display = "block";
-  document.getElementById("noresult").style.display = "none";
-  document.getElementById("searchfor").style.display = "block";
-
   let input = document.getElementById("input").value;
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`;
-
-  // search result for
   const searchfor = document.getElementById("searchfor");
-  searchfor.innerText = ` Search Results for: '${input}'`;
+  // search value empty check 
+  const empty = document.getElementById('empty')
+  if (input.length == 0)
+  {
+    searchfor.innerText = ''
+    document.getElementById("card_area").innerHTML = "";
+    empty.innerText = 'Search box is Empty..😒'
+    }
 
-  // cleaner
-  document.getElementById("card_area").innerHTML = "";
+  else {
+    // spiner
+    empty.innerText = ''
+    document.getElementById("spinner").style.display = "block";
+    document.getElementById("noresult").style.display = "none";
+    document.getElementById("searchfor").style.display = "block";
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`;
 
-  document.getElementById("input").value = "";
+    // search result for
+    
+    searchfor.innerText = ` Search Results for: '${input}'`;
 
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => display(data.meals));
+    // cleaner
+    document.getElementById("card_area").innerHTML = "";
+
+    document.getElementById("input").value = "";
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => display(data.meals));
+  }
 }
 
 function display(data)
 {
-
+ console.log(data)
   if (data != null)
   {
     // showing card
